@@ -1,0 +1,27 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Logo 1</th>
+            <th scope="col">Team 1</th>
+            <th scope="col">Score 1</th>
+            <th scope="col">Score 2</th>
+            <th scope="col">Team 2</th>
+            <th scope="col">Logo 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let m of matches'>
+            <td>{{m.id}}</td>
+            <td><img [src]="m.logo1" width="50px" height="50px"></td>
+            <td>{{m.team1}}</td>
+            <td>{{m.score1}}</td>
+            <td>{{m.score2}}</td>
+            <td>{{m.team2}}</td>
+            <td><img [src]="m.logo2" width="50px" height="50px"></td>
+            <td><button type="button" class="btn btn-success" (click)="goToMatch(m.id)">Display</button>
+                <button type="button" class="btn btn-secondary" (click)="EditMatch(m._id)">Edit</button>
+                <button type="button" class="btn btn-primary" (click)="DeleteMatch(m._id)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>

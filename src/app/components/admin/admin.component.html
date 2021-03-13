@@ -1,0 +1,40 @@
+
+    <div class="hero overlay" style="background-image: url('assets/images/bg_3.jpg');">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-9 mx-auto text-center">
+              <h1 class="text-white">Admin</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="site-section">
+        <div class="container">
+          <div class="col">
+
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="Teams" aria-selected="true">Teams</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="Players" aria-selected="false">Players</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="Matches" aria-selected="false">Matches</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <app-tableteams></app-tableteams>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <app-tableplayers></app-tableplayers>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <app-tablematches></app-tablematches>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
