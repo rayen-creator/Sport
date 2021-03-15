@@ -69,7 +69,7 @@
                     </div>
                     <!-- Button Action -->
                     <div class="form-group">
-                        <input type="submit" class="btn btn-primary py-3 px-5" (click)="signup(signupForm.value)" value="Sign up">
+                        <input type="submit" class="btn btn-primary py-3 px-5" (click)="signup(signupForm.value)" [disabled]="!signupForm.valid" value="Sign up">
                     </div>
                 </form>
             </div>

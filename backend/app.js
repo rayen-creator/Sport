@@ -248,10 +248,7 @@ app.post('/signup', (req, res) => {
 app.post('/login', (req, res) => {
     console.log('Here in post', req.body);
     // Insert into DB
-    User.findOne({
-        Email: req.body.Email,
-        Password: req.body.Password
-    })
+    User.findOne({ Email: req.body.Email })
 });
 //#endregion
 
